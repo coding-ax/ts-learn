@@ -16,15 +16,10 @@ async function data() {
         resolve(aa)
     })
 }
-// async function  main() {
-//     let a = await data();
-//     console.log(2)
-//     console.log(3)
-// }
-// main()
-let a = null;
-a = data();
-while (a==null) {
+async function  main() {
+    let a = await data();
+    console.log(a)
+    console.log(2)
+    console.log(3)
 }
-console.log(2)
-console.log(3)
+main()

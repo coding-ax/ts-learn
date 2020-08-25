@@ -44,18 +44,29 @@ function data() {
       }
     }
   });
-} // async function  main() {
-//     let a = await data();
-//     console.log(2)
-//     console.log(3)
-// }
-// main()
+}
 
+function main() {
+  var a;
+  return regeneratorRuntime.async(function main$(_context3) {
+    while (1) {
+      switch (_context3.prev = _context3.next) {
+        case 0:
+          _context3.next = 2;
+          return regeneratorRuntime.awrap(data());
 
-var a = null;
-a = data();
+        case 2:
+          a = _context3.sent;
+          console.log(a);
+          console.log(2);
+          console.log(3);
 
-while (a == null) {}
+        case 6:
+        case "end":
+          return _context3.stop();
+      }
+    }
+  });
+}
 
-console.log(2);
-console.log(3);
+main();
